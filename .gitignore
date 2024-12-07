@@ -14,6 +14,8 @@ node_modules
 # production
 /build
 
+/.history/
+
 #old stuff
 /old
 

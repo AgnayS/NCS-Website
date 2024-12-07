@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, Montserrat } from 'next/font/google'
+import { Inter, Montserrat } from 'next/font/google'  // Changed from @next/font
 import { Footer } from '@/components/layout/Footer'
 
 const inter = Inter({
@@ -15,7 +15,10 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-  title: 'Nature Conservation Society',
+  title: {
+    default: 'Nature Conservation Society',
+    template: '%s | Nature Conservation Society',
+  },
   description: 'Preserving wildlife and empowering communities since 1976',
 }
 

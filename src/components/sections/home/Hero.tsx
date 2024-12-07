@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import Link from 'next/link' // Add this import
 import { Container } from '../../ui/Container'
 
 export function Hero() {
@@ -40,18 +41,18 @@ export function Hero() {
           <div className={`space-x-4 transition-all duration-700 ease-out ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`} style={{ transitionDelay: '200ms' }}>
-            <a
-              href="#about"
+            <Link
+              href="/about"
               className="inline-block bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors"
             >
               Learn More
-            </a>
-            <a
+            </Link>
+            <Link
               href="/support-us"
               className="inline-block bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-medium backdrop-blur-sm transition-colors"
             >
               Support Us
-            </a>
+            </Link>
           </div>
         </div>
       </Container>
